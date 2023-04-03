@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900;&family=Roboto&display=swap');
+/*familia de fontes que será usada no site, importada do google fontes*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css);
+* {
+  box-sizing: border-box;
+/* permite que o elemento inclua o preenchimento e a borda na largura e altura total definida para ele. Sem essa propriedade o tamanho real seria diferente do tamanho definido*/
+}
+:root { /* configuração global do site */
+  --color-primary:#ffc500; /*cor que vai sr bastante usada, foi criado uma variavel para nao precisar colocar o rgb da cor sempre q for usar, assim poe so o nome da variavel */
+  --color-copy: #333;
+  --color-text: #fff;
+  font-family:'Montserrat', sans-serif; /* fonte a ser usada no site */
+  font-size:16px; /* tamanho padrao da fonte */
+  --default-padding: 1rem;
+}
+
+body { /* corpo da pagina */
+  margin:0; /* retira a margem padrao do navegador, deixa tudo alinhado encostado a borda */
+  padding-top: 7.75rem;
+  background: #000;
+}
+
+/*header, main, footer {
+overflow-x: hidden;
+}*/
+
+.container {
+max-width: 1140px;
+margin: 0 auto;
+}
+ul { /* listas*/
+  display: flex; 
+  list-style:none; /* retira a estilização padrao das listas para estilizar como quiser */
+  padding-left: 0; /* retira o pading padrao */
+}
+.navbar { /* estiliza o cabeçalho da pagina */
+  position: fixed; /*mantem fixo, nao vai para cima junto com o resto da pagina quando rola  o mouse*/
+  z-index: 1;
+  top: 0;
+  left:0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar__container {
+  display: grid; /* preciso estudar o grid para entender melhor e estudar o flex-box tbm*/
+  grid-template-columns: 1fr 9fr; 
+  align-items: center;
+
+
+  width: 100vw;
+  height: 7.75rem;
+  padding: 0 1rem;
+
+  background-color: #000;
+  color:#fff;
+}
+.navbar__links { /* coloca alinhado ao final da pagina- a direita- os links para outras paginas */
+  justify-self: end; /*justificado a direito. pesquisar diferenca de right top*/
+}
+
+.navbar__links li { /*estiliza os links em sí */
+  font-size: 0.875rem; /* para saber o rem, divide o tamanho em pixels por 16*/
+  margin-right:3rem;
+  text-transform: uppercase;
+}
+.navbar__links a {/* estilizar a cor dos links */
+  color:#fff; /*cor do texto */
+  text-decoration: none;/*texto sem decoracao*/
+  font-weight: 300;
+}
+
+.navbar__links a:hover {
+  color: var(--color-primary) /*criado uma variavel para definir essa cor e nao precisar digitar seu codigo hexadecimal toda vez*/
+}
+.logo--studion { /* vai estilizar o logo  STUDION*/
+font-size: 2.375rem; /* 2.375*16= 38 px */
+font-weight: 800; /*peso da  fonte */
+line-height: 1ch; /* define a distancia entre uma linha e outra e o ch é relativa ao tamanho da altura do caractere 0 da fonte */
+text-transform: uppercase; /*deixa o texto todo em caixa alta  */
+text-align: right; /* alinha tudo a direita para nao desconfigurar o alinhamento conforme troca a resolluçao da tela */
+}
+.logo--studion_subtitle { /*vai estilizar a palavra Eventos*/
+  font-size: 0.875rem; /* 14 px */
+  font-weight: 300; /* peso da fonte */
+  /*text-align: right;  alinhar o texto a direita */
+}
+.copy--primary { /* vai estilizar o span ON*/
+color: var(--color-primary);
+}
+
+#slider {
+background-color:#000;
+color:#fff;
+}
+
+.slide {
+  position: relative;
+  height: calc(100vh - 7.75rem);
+}
+
+.slide_background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.slide__copy {
+  position: absolute;
+  top: 6.25rem;
+  left: 50vw;
+}
+.slide__copy h6 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1875rem;
+}
+
+.slide__copy h2 {
+  margin:0;
+  font-size: 6.25rem;
+  text-transform: uppercase;
+  line-height: 6.25rem;
+}
+.slide__copy h2 span {
+  display: block;
+}
+
+.btn {
+  margin-top:30px;
+  cursor: pointer; /*faz o mouse virar uma maozinha quando passa em cima do botao*/
+  padding: 1rem 2.5rem;
+  border: 0.125rem solid #fff;
+  border-radius: 5rem;
+  color: var(--color-primary);
+  background: unset;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s all ease; /* transição animada e mais dinamica ao passar pelo slide*/
+}
+
+.btn:hover, .btn:active, .btn:focus, .btn--institutional {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+#countner {
+  background-color: var(--color-primary);
+  color:#fff;
+  text-transform: uppercase;
+}
+
+.counter__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  place-items: center;
+  padding: 4.375rem 1rem;
+}
+
+.counter__container h3 {
+  font-size: 2.1875rem;
+}
+.counter__container h3 small {
+  display: block;
+  font-size: 1.25rem;
+}
+
+.institutional {
+  background: #fff;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3.125rem;
+  align-items: center;
+  padding: 4.375rem;
+}
+.institutional__img {
+  max-width: 550px;
+}
+.institutional__copy {
+  padding: 0 1.875rem;
+}
+.institutional__copy h6 {
+  font-size: 0.875rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color:var(--color-copy);
+}
+.institutional__copy h4 {
+  font-size: 1.5625rem;
+  margin-top: 1rem;
+}
+.institutional p {
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 1.0625rem;
+  line-height: 1.6875rem;
+  margin-bottom: 0;
+;
+}
+
+.btn--institutional:hover {
+  color: var(--color-copy);
+  background: unset;
+}
+
+#quote {
+  background-image:url(./parallax3.jpg);
+  min-height: 80vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+background-position: center;
+}
+
+.quote__container {
+  display: grid;
+  align-items: center;
+  justify-items: end;
+  min-height: 80vh;
+}
+
+.quote__copy {
+  background-color: #fff;
+  padding: 5.265rem 4.375rem;
+}
+
+.quote__copy h6 {
+  font-size: 0.9375rem;
+  font-weight: 400; 
+  letter-spacing: 0.1875rem;
+  line-height: 1.4375rem;
+  width:60ch;
+  text-transform: uppercase;
+  margin: 0; 
+}
+
+.quote__copy h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: -.1875rem;
+  margin: 1.875rem 0 0;
+  
+}
+
+.quote__copy h2 span {
+  display: block;
+}
+
+.btn--quote {
+  color: var(--color-copy);
+  border-color: var(--color-copy);
+  background: unset;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  align-items: center;
+  padding: 5.25rem 0 3.75rem 0;
+}
+.footer .logo--studion {
+  justify-self: start;
+margin: 0;
+}
+.logo--studion_subtitle{
+  display: block;
+}
+.footer-form{
+
+  display: grid;
+  place-items: center;
+  grid-template-columns: 10ch auto;
+  gap: 1.25rem;
+}
+
+.footer-form label {
+  font-size: .875rem;
+  font-weight: 300;
+  line-height: 1rem;
+}
+
+.footer-form fieldset {
+  display: grid;
+  grid-template-columns: auto 3.375rem;
+  border: unset;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.footer-form input {
+  height: 2.875rem;
+  background-color: #ffc500;
+  padding: 1rem;
+  border: unset;
+  font-size: .875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footer-form input::placeholder {
+  color: #000;
+}
+
+.footer-form input:focus {
+  outline: unset;
+}
+
+.footer-form button {
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  border: unset;
+  height: 2.875rem;
+  transition: 0.3s all ease;
+}
+.footer-form button:hover {
+  color: #fff;
+  background-color: var(--color-copy);
+}
+.footer__social{
+  justify-self: end;
+}
+.footer__social a,
+.footer__social a:visited, 
+.footer__social a:active {
+  color: #fff;
+  margin-left: .5rem;
+  }
+  
+  .footer hr {
+    border-color: #fff4;
+    margin: 0;
+  }
+
+  .footer p {
+    text-align: center;
+    font-size: .875rem;
+    font-weight: 300;
+    margin: 2.5rem 0;
+  }
