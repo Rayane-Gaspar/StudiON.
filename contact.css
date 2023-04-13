@@ -17,7 +17,6 @@
 body { 
   margin:0;
   padding-top: 7.75rem;
-  background: #000;
 }
 
 .container {
@@ -90,7 +89,7 @@ color: var(--color-primary);
 }
 
 #slider {
-background-color:#000;
+  background-color:#000;
 color:#fff;
 }
 
@@ -361,3 +360,6 @@ margin: 0;
     font-weight: 300;
     margin: 2.5rem 0;
   }
+p, h3{
+  background-color: #fff;
+}
