@@ -12,5 +12,9 @@
     "url": "git+https://github.com/Rayane-Gaspar/StudiON.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "live": "^0.1.25-beta.0",
+    "server": "^1.0.38"
+  }
 }

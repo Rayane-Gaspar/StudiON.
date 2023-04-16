@@ -4,63 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
-    <title>Studion</title>
+    <title>Studion - Contatos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <nav class="navbar">
-    <div class="container navbar__container"> 
-        <h1 class="logo--studion">
-            Studi<span class="copy--primary">on</span>
-            <span class="logo--studion_subtitle">Eventos</span>
-        </h1> 
-    
-        <ul class="navbar__links"> 
-            <li>
-                <a href="#enterprise.html" target="_blank">Empresa</a>
-            </li>
-            <li>
-                <a href="#events.html" target="_blank">Eventos</a>
-            </li>
-            <li>
-                <a href="#gallery.html" target="_blank">Galeria</a>
-            </li>
-            <li>
-                <a href="#testimonials.html" target="_blank">Depoimentos</a>
-            </li>
-            <li>
-                <a href="#contact.html" target="_blank">Contatos</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-    <header> 
-        <div class="hero">
-            <img src="./design/Black & White 1.jpg" alt="" class="hero__background">
-            <div class="container hero__container"></div>
-            <div class="hero__copy"></div>
-            <h2>.contact</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem repudiandae alias quasi ut dolor soluta maiores deleniti quia eveniet voluptatibus tempore iste amet aliquid minus, at sequi adipisci odit sapiente!</p>
+        <div class="container navbar__container"> 
+            <h1 class="logo--studion">
+                <a href="index.html">
+                Studi<span class="copy--primary">on</span>
+                <span class="logo--studion_subtitle">Eventos</span>
+            </a>
+            </h1> 
+        
+            <ul class="navbar__links"> 
+                <li>
+                    <a href="#enterprise.html" target="_blank">Empresa</a>
+                </li>
+                <li>
+                    <a href="#events.html" target="_blank">Eventos</a>
+                </li>
+                <li>
+                    <a href="#gallery.html" target="_blank">Galeria</a>
+                </li>
+                <li>
+                    <a href="#testimonials.html" target="_blank">Depoimentos</a>
+                </li>
+                <li>
+                    <a class="active" href="/contact.html" target="_blank">Contatos</a>
+                </li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <main> 
-        <section class="contact">
-            <section class="contact_info">
-                <h3>
-                    Liga pra gente
-                    
-                </h3>
-                <span>
-                    <i class="fa-solid fa-phone fa-2xs"></i>
+<header class="hero">
+<img src="./design/contatos.jpg"" class="hero__background" alt="imagem da tela de contato">
+<div class="container hero__container">
+    <div class="hero__copy">
+        <div></div>
+        <div>
+            <h2>.contato</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, perspiciatis. Inventore repellendus soluta, est doloremque autem dignissimos odit hic earum pariatur! Soluta praesentium unde inventore! Omnis repellendus accusamus quis autem.</p>
+        </div>
+    </div>
+</div>
+</header>
+
+<main>
+    <section class="contact">
+        <section class="contact__info">
+            <div class="contact__info__container">
+                <h3>Liga pra gente</h3>
+                <span class="contact__info__container_dados">
+                    <i class="fa-solid fa-phone"></i>
+                    +55 48 3223 - 5769 <br>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    +55 48 99943 - 7777
                 </span>
-            </section>
+                <h3>Venha conhecer a nossa casa</h3>
+                <span class="contact__info__container_dados">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Rua Miguel Daux, 129 - Coqueiros <br>   Florianópolis / SC
+                </span>
+            </div>
         </section>
-    </main>
+        <section class="contact__form">
+            <h3>Deixe sua mensagem</h3>
+            <div contact__form_formulary>
+                <form action="/action_page.php" method="get">
+                    <label for="name">Seu Nome:</label>
+                    <input type="text" id="name" name="name"/>
+                    <br>
+                    <label for="email">Seu e-mail:</label>
+                    <input type="email" id="email" name="email"/> 
+                    <br>
+                    <label for="message">Deixe sua mensagem</label>
+                    <input type="text" id="mensagem" name="mensagem"/> 
+                    <button class="btn btn--contact" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <section class="maps">
+        mapa
+        </section>
+    </section>
 
-    <footer class="footer"> 
+</main>
+
+<footer class="footer"> 
         <div class="container footer__container">
             <h2 class="logo--studion">
                 Studi<span class="copy--primary">on</span>
@@ -96,6 +127,6 @@
         <p>
             <small>Studi<span class="copy--primary">ON</span> - Todos os direitos reservados</small>
         </p>    
-    </footer>
+</footer>
 </body>
 </html>
