@@ -1,0 +1,20 @@
+{
+  "name": "studion-atualizado",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rayane-Gaspar/StudiON.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live": "^0.1.25-beta.0",
+    "server": "^1.0.38"
+  }
+}
