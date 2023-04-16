@@ -10,15 +10,14 @@
 
 body { 
   margin:0;
-  padding-top: 7.75rem;
   background: #fff;
 }
 
-header,
+/*header,
 main,
 footer {
   overflow-x:hidden;
-}
+}*/
 
 ul { 
   display: flex; 
