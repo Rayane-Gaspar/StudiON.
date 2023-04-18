@@ -1,0 +1,55 @@
+.company{
+  max-width: 1140px;
+  max-height: 769px;
+  margin-left: 8rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns:35.625rem 35.625rem;
+}
+
+.company_p-span {
+  font-family: 'Monteserrat','Sans-serif';
+  font-size: 1.56rem;
+  font-weight: 700;
+  line-height: 1.9375rem;
+  color: #333333;
+}
+
+.company p {
+  margin-top: 7.43rem;
+  padding-left: 5rem 0;
+  font-family: 'Roboto';
+  font-size: 1rem;
+  line-height: 1.6875rem;
+  color: #333333;
+  width: 55ch;
+
+}
+.company__marcas {
+  background: #ffc500;
+}
+
+.company__marcas h3 {
+  padding-top: 4.8rem;
+  padding-left: 26.25rem;
+  font-family: 'Montserrat', 'Sans-serif';
+  font-size: 1.5625rem;
+  font-weight: 700;
+  line-height: 1.93rem;
+  color: #333333;
+}
+
+.company__marcas img {
+  padding-left: 8rem;
+}
+
+.company__informs {
+  height: 54rem;
+
+}
+.company__informs iframe {
+  width: 63.25rem;
+  height: 41rem;
+  padding-left: 18rem;
+  padding-top: 11rem;
+}

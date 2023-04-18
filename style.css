@@ -2,12 +2,13 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
 
 @import './css/_variables.css';
+@import './css/_contact.css';
+@import './css/_empresa.css';
 @import './css/_base.css';
 @import './css/_utils.css';
 @import './css/_btn.css';
 
 @import './css/_navbar.css';
 @import './css/_hero.css';
-@import './css/_contact.css';
 @import './css/_home.css';
 @import './css/_footer.css';

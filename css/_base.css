@@ -13,11 +13,11 @@ body {
   background: #fff;
 }
 
-/*header,
+header,
 main,
 footer {
   overflow-x:hidden;
-}*/
+}
 
 ul { 
   display: flex; 

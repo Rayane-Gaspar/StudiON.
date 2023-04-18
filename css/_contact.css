@@ -1,6 +1,9 @@
-.contact  {
+
+
+.contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
 }
 .contact h3 {
   margin:0;
@@ -32,7 +35,7 @@ margin-top: 3.75rem;
   gap: .625rem;
   align-items: center;
   font-size: 1.06rem;
- font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   line-height: 1.68775rem;
 
@@ -59,7 +62,7 @@ margin-top: 3.75rem;
 }
 
 .contact__form input {
-  width: 100%;
+  width: 60%;
   margin-bottom: 1.875rem;
   padding: 0.5rem 0;
   background: unset;
@@ -74,6 +77,11 @@ margin-top: 3.75rem;
 }
 
 .contact__form button {
-  margin-right: 4rem;
+  margin-right: 15rem;
   float: right;
+}
+
+.maps iframe {
+  height: 36.5rem;
+  width: 200%;
 }
