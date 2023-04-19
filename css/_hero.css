@@ -36,3 +36,30 @@
   line-height: 1.875rem;
   color: var(--color-copy--alt);
 }
+
+.hero__copy-depoiments_h3 {
+  margin: 0;
+  padding-left: 45px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing:.4rem;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  
+}
+
+.hero__copy-depoiments h2 {
+  padding-left: 45px;
+  font-size: 6rem;
+}
+
+.hero__copy-depoiments p{
+  margin: 0;
+  padding-left: 45px;
+  font-size: .9375rem;
+  line-height: 1.875rem;
+  color: var(--color-copy--alt);
+}
