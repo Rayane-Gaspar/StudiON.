@@ -1,0 +1,81 @@
+@import '/style.css';
+
+.principal {
+  width: 100%;
+  padding:2rem 8.5rem;
+  background-color: black;
+  
+}
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(11,5vw);
+  gap: 0.8rem;
+
+}
+
+.galeria_img{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.galeria_item {
+  overflow: hidden;
+}
+
+.img01 {
+  margin: 0;
+  grid-column: 1 / span 2;
+  grid-row: 1 /span 3;
+}
+.img02 {
+  margin: 0;
+  grid-column: 3 / span 2;
+  grid-row: 1 /span 6;
+}
+
+.img03 {
+  margin: 0;
+  grid-column: 5 / span 3;
+  grid-row: 1 /span 4;
+}
+.img04 {
+  margin: 0;
+  grid-column: 8 / span 3;
+  grid-row: 1 /span 4;
+}
+.img05 {
+  margin: 0;
+  grid-column: 1 / span 2;
+  grid-row: 4 /span 4;
+}
+.img06 {
+  margin: 0;
+  grid-column: 3 / span 2;
+  grid-row: 7 /span 4;
+}
+
+.img07 {
+  margin: 0;
+  grid-column: 5 / span 3;
+  grid-row: 5 /span 3;
+}
+
+.img08 {
+  margin: 0;
+  grid-column: 8 / span 3;
+  grid-row: 5 /span 6;
+}
+.img09 {
+  margin: 0;
+  grid-column: 1 / span 2;
+  grid-row: 8 /span 4;
+}
+.img10 {
+  margin: 0;
+  grid-column: 5 / span 3 ;
+  grid-row: 8 /span 4;
+}

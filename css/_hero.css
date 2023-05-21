@@ -63,3 +63,37 @@
   line-height: 1.875rem;
   color: var(--color-copy--alt);
 }
+
+.hero__copy-gallery {
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50vw;
+  padding: 3rem 10.875rem 3rem 0;
+}
+.hero__copy-gallery_h3 {
+  margin: 0;
+  padding-left: 35px;
+  font-size: 0.5rem;
+  line-height: 1.5rem;
+  letter-spacing:.2rem;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.hero__copy-gallery_h2 {
+  padding-left: 45px;
+  font-size: 6rem;
+}
+.hero__copy-gallery p{
+  margin: 0;
+  padding-left: 45px;
+  font-size: .9375rem;
+  line-height: 1.875rem;
+  color: var(--color-copy--alt);
+}
+

@@ -1,7 +1,7 @@
 .company{
   max-width: 1140px;
   max-height: 769px;
-  margin-left: 8rem;
+  margin: 0 auto;
   padding: 0;
   display: grid;
   grid-template-columns:35.625rem 35.625rem;
@@ -27,11 +27,12 @@
 }
 .company__marcas {
   background: #ffc500;
+  display: grid;
+  grid-template-columns: auto;
 }
 
 .company__marcas h3 {
-  padding-top: 4.8rem;
-  padding-left: 26.25rem;
+  text-align: center;
   font-family: 'Montserrat', 'Sans-serif';
   font-size: 1.5625rem;
   font-weight: 700;
@@ -39,17 +40,27 @@
   color: #333333;
 }
 
-.company__marcas img {
-  padding-left: 8rem;
+.company__marcas-img {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(5,1fr);
 }
-
+.company__marcas-img img {
+  width: 1040px;
+  margin-bottom: 2rem;
+  grid-column: 2 / span 4;
+  grid-row: 1 /span 5;
+}
 .company__informs {
   height: 54rem;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(5,1fr);
 
 }
 .company__informs iframe {
-  width: 63.25rem;
-  height: 41rem;
-  padding-left: 18rem;
-  padding-top: 11rem;
+  height: 518px;
+  width: 1040px;
+  grid-column: 2 / span 4;
+  grid-row: 2 /span 3;
 }
